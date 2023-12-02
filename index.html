@@ -36,24 +36,64 @@
             height: auto;
         }
 
+        /* Estilos del CSS aquí (como se proporciona en el código anterior) */
 
-        /*button {
-            width: 100px;
-            height: 40px;
-            margin: 5px;
+        .containerboton {
+            display: grid;
+            grid-template-rows: repeat(9, auto-fit);
+            grid-template-columns: repeat(5, auto-fit);
+            /* Cuatro filas, altura automática */
+            /*grid-gap: 5px;*/
+            /* Espaciado vertical entre filas */
+            place-items: center;
+            height: 100vh;
+            /* Ajusta según tu diseño */
+            background-image: url('./img/decimo.webp');
+            /* Ruta a tu imagen */
+            background-size: cover;
+            /* Ajusta el tamaño de la imagen */
+            background-position: center;
+            /* Centra la imagen */
+        }
+
+        .boton-transparente,
+        .boton-transparente2 {
+            text-decoration: none;
+            /* Elimina la subrayado predeterminado de los enlaces */
+            /*background-color: rgba(0, 0, 0, 0.5);*/
+            /* Color de fondo transparente */
+            color: white;
+            /* Color del texto */
+            padding: 40px 100%;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
-            font-size: 14px;
-            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            /* Ocupa todo el ancho de la columna */
+            display: block;
+            /* Asegura que el enlace sea de bloque para ocupar todo el ancho */
         }
 
-        #boton1 {
-            background-color: red;
+        .boton-transparente {
+            display: grid;
+            grid-row: 7;
+            grid-column: 1, 4;
+            /* Coloca el botón en la tercera fila */
         }
 
-        #boton2 {
-            background-color: yellow;
-        }*/
+        .boton-transparente2 {
+            display: grid;
+            grid-row: 8;
+            /* Coloca el botón en la cuarta fila */
+        }
+
+        .boton-transparente:hover,
+        .boton-transparente2:hover {
+            background-color: rgba(0, 0, 0, 0.0);
+            /* Cambia el color al pasar el mouse */
+        }
     </style>
     <title>¡Nuestra Boda! Joe & Ani</title>
 </head>
@@ -117,17 +157,18 @@
         </div>
     </div>
 
-    <div class="imagen-container" class="padre">
+    <div class="containerboton">
 
-        <div class="">
-            <img class="imagen10" src="./img/decimo.webp" alt="Imagen 10">
-            <!-- <button id="boton1" onclick="redirigirWhatsApp('Boton1')">Boton 1</button>
-            <button id="boton2" onclick="redirigirWhatsApp('Boton2')">Boton 2</button> -->
+        <a href="https://wa.link/o9l0d4" class="boton-transparente"></a>
 
-        </div>
+        <!-- <div style="height: 20px;"></div> -->
+
+        <a href="https://wa.link/qn9909" class="boton-transparente2"></a>
+
     </div>
 
-    <!-- <div class="hijo1" onclick="location.href='https://wa.me/5491164592451?text=si%20asistire';">hijo1</div> -->
+
+
 </body>
 
 </html>
