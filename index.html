@@ -6,169 +6,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/anillo.png" type="image/x-icon">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        .imagen-container {
-            width: 100%;
-            text-align: center;
-        }
-
-        .imagen1,
-        .imagen2,
-        .imagen3,
-        .imagen4,
-        .imagen5,
-        .imagen6,
-        .imagen7,
-        .imagen8,
-        .imagen9,
-        .imagen10 {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .maps {
-            width: 100%;
-            height: auto;
-        }
-
-        /* Estilos del CSS aquí (como se proporciona en el código anterior) */
-
-        .containerboton {
-            display: grid;
-            grid-template-rows: repeat(9, auto-fit);
-            grid-template-columns: repeat(5, auto-fit);
-            /* Cuatro filas, altura automática */
-            /*grid-gap: 5px;*/
-            /* Espaciado vertical entre filas */
-            place-items: center;
-            height: 100vh;
-            /* Ajusta según tu diseño */
-            background-image: url('./img/decimo.webp');
-            /* Ruta a tu imagen */
-            background-size: cover;
-            /* Ajusta el tamaño de la imagen */
-            background-position: center;
-            /* Centra la imagen */
-        }
-
-        .boton-transparente,
-        .boton-transparente2 {
-            text-decoration: none;
-            /* Elimina la subrayado predeterminado de los enlaces */
-            /*background-color: rgba(0, 0, 0, 0.5);*/
-            /* Color de fondo transparente */
-            color: white;
-            /* Color del texto */
-            padding: 40px 100%;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-            width: 100%;
-            /* Ocupa todo el ancho de la columna */
-            display: block;
-            /* Asegura que el enlace sea de bloque para ocupar todo el ancho */
-        }
-
-        .boton-transparente {
-            display: grid;
-            grid-row: 7;
-            grid-column: 1, 4;
-            /* Coloca el botón en la tercera fila */
-        }
-
-        .boton-transparente2 {
-            display: grid;
-            grid-row: 8;
-            /* Coloca el botón en la cuarta fila */
-        }
-
-        .boton-transparente:hover,
-        .boton-transparente2:hover {
-            background-color: rgba(0, 0, 0, 0.0);
-            /* Cambia el color al pasar el mouse */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <title>¡Nuestra Boda! Joe & Ani</title>
 </head>
 
 <body>
 
-    <div class="imagen-container">
-        <div>
-            <img class="imagen1" src="./img/primero.webp" alt="Imagen 1">
-        </div>
-    </div>
+<div class="contrnedor">
+  <img src="img/primero.webp">
+  <img src="img/segundo.webp">
+  <img src="img/tercero.webp">
+  <a href="https://maps.app.goo.gl/kMid2Pe3cBpZzu3m9">
+  <img src="img/cuarto.webp"></a>
+  <img src="img/quinto.webp">
+  <img src="img/sexto.webp">
+  <img src="img/septimo.webp">
+  <img src="img/octavo.webp">
+  <img src="img/noveno.webp">
+</div> 
 
+<footer>
+  <div class="contrnedor2">
+        <a href="#" id="abrirModal">
+    <img src="img/decimo.webp" alt="decimo"></a>
+  </div>
+</footer>
 
-    <div class="imagen-container">
-        <div>
-            <img class="imagen2" src="./img/segundo.webp" alt="Imagen 2">
-        </div>
-    </div>
+<div class="modal" id="modalFormulario">
+<div class="modal-contenido">
+  <span class="cerrar-modal" id="cerrarModal">&times;</span>
+  <h2>Por favor, elija una opción</h2>
+  <form id="formulario">
+    <button type="button" id="siAsistire">Sí asistiré</button>
+    <button type="button" id="noAsistire">No asistiré</button>
+  </form>
+</div>
+</div>
 
-    <div class="imagen-container">
-        <div>
-            <img class="imagen3" src="./img/tercero.webp" alt="Imagen 3">
-        </div>
-    </div>
-
-    <a href="https://maps.app.goo.gl/kMid2Pe3cBpZzu3m9">
-        <div class="imagen-container">
-            <div>
-                <img class="imagen4" src="./img/cuarto.webp" alt="Imagen 4" class="maps">
-            </div>
-        </div>
-    </a>
-
-    <div class="imagen-container">
-        <div>
-            <img class="imagen5" src="./img/quinto.webp" alt="Imagen 5">
-        </div>
-    </div>
-
-    <div class="imagen-container">
-        <div>
-            <img class="imagen6" src="./img/sexto.webp" alt="Imagen 6">
-        </div>
-    </div>
-
-    <div class="imagen-container">
-        <div>
-            <img class="imagen7" src="./img/septimo.webp" alt="Imagen 7">
-        </div>
-    </div>
-
-    <div class="imagen-container">
-        <div>
-            <img class="imagen8" src="./img/octavo.webp" alt="Imagen 8">
-        </div>
-    </div>
-
-    <div class="imagen-container">
-        <div>
-            <img class="imagen9" src="./img/noveno.webp" alt="Imagen 9">
-        </div>
-    </div>
-
-    <div class="containerboton">
-
-        <a href="https://wa.link/o9l0d4" class="boton-transparente"></a>
-
-        <!-- <div style="height: 20px;"></div> -->
-
-        <a href="https://wa.link/qn9909" class="boton-transparente2"></a>
-
-    </div>
-
-
-
+<script src="script.js"></script>
 </body>
 
 </html>
